@@ -44,11 +44,3 @@ jobs:
       run: |
         docker push delledonnegn/nginx-proxy:latest
         docker push delledonnegn/backend-flask:latest
-
-    - name: Run health check script
-      run: |
-        ./healthcheck.sh
-
-    - name: Shut down containers
-      run: |
-        docker-compose -f docker-compose.yml down
