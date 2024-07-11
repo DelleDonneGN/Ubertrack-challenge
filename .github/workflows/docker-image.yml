@@ -44,6 +44,6 @@ jobs:
     - name: Push Docker images to Docker Hub
       run: |
         docker tag backend-flask:latest delledonnegn/backend-flask:latest
-        docker tag nginx:latest delledonnegn/nginx-proxy:latest
+        docker tag ubertrack-challenge-nginx-proxy:latest delledonnegn/nginx-proxy:latest
         docker push delledonnegn/nginx-proxy:latest
         docker push delledonnegn/backend-flask:latest
