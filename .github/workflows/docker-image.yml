@@ -38,7 +38,7 @@ jobs:
 
     - name: Build Docker images
       run: |
-        docker compose up --build
+        docker compose build
 
     - name: Push Docker images to Docker Hub
       run: |
